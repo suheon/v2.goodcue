@@ -19,12 +19,54 @@
             <img src="/img/logo.png" alt="좋은큐연구소"/>
           </a>
           <div class="menu">
-            메뉴 영역
+            <ul class="navbar-nav">
+              <li class="dropdown nav-item">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                  <i class="material-icons">apps</i> 큐 체험
+                </a>
+                <!-- <div class="dropdown-menu dropdown-with-icons">
+                  <a href="/recommend.html" class="dropdown-item">큐 추천</a>
+                  <a href="/item/rent_cue.html" class="dropdown-item">큐 시타</a>
+                  <a href="/item/rent_shaft.html" class="dropdown-item">상대 시타</a>
+                  <a href="/item/package.html" class="dropdown-item">Cue Travel Visa</a>
+                  <a href="/item/use-buy.html" class="dropdown-item">써보고 구매</a>
+                  <a href="/item/visit.html" class="dropdown-item">방문 시타</a>
+                  <a href="/theme-shop.html" class="dropdown-item">테마샵</a>
+                </div> -->
+              </li>
+              <li>큐 이야기 </li>
+            </ul>
+
+            <!-- <ul class="navbar-nav  mr-auto">
+              <li class="dropdown nav-item">
+
+              
+              </li>
+
+              <li class="dropdown nav-item">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                  <i class="material-icons">forum</i> 큐 이야기
+                </a>
+                <div class="dropdown-menu dropdown-with-icons">
+                  <a href="/rank.html" class="dropdown-item">랭킹</a>
+                  <a href="/review.html" class="dropdown-item">이용후기</a>
+                  <a href="/free-board.html" class="dropdown-item">와글와글</a>
+                  <a href="/trade.html" class="dropdown-item">시세정보</a>
+                  <a href="/youtube.html" class="dropdown-item">좋은큐연구소 TV</a>
+                </div>
+              </li>
+              <li class="nav-item mobile-only">
+                <a href="/notice.html" class="nav-link"><i class="material-icons">info</i> 공지사항</a>
+              </li>
+
+            </ul> -->
+
+
           </div>
           <div class="search">검색</div>
           <div class="private">
-            <button type="button">로그인</button>
-            <button type="button">회원가입</button>
+            <button type="button" class="btn btn-primary">로그인</button>
+            <button type="button" class="btn btn-secondary">회원가입</button>
           </div>
         </div>
       </nav>

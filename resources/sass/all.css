@@ -1,6 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;
-
-700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap);body,
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+body,
 div,
 dl,
 dt,
@@ -56,19 +55,22 @@ textarea,
 button {
   font-size: 14px;
   line-height: 1.5;
-  font-family: "Noto Sans KR", "Nanum Gothic", "Malgun Gothic", sans-serif;
+  font-family: 'Noto Sans KR', 'Nanum Gothic', 'Malgun Gothic', sans-serif;
   color: #555;
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: fixed;
   border: 0;
+  margin-bottom: 20px;
   background-color: #fff !important;
+  -webkit-box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
   box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
   width: 100%;
-  height: 52px;
-  padding-top: 3px;
+  height: 50px;
 }
 
 .main {
@@ -105,19 +107,27 @@ a.banner img {
 }
 
 .private {
+  display: inline-block;
   margin-left: auto;
+  right: 0;
 }
 
 .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .box {
   border: 1px solid #555;
   width: 30px;
   height: 30px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .private .btn {
@@ -126,24 +136,31 @@ a.banner img {
 }
 
 .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1000px;
   margin: 0 auto;
-  align-items: center;
 }
 
 .col-2 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 16.66667%;
   flex: 0 0 16.66667%;
   max-width: 16.66667%;
 }
 
 .col-4 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.33333%;
   flex: 0 0 33.33333%;
   max-width: 33.33333%;
 }
 
 @media screen and (max-width: 991px) {
   .contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
@@ -164,7 +181,10 @@ a.banner img {
   border: 0;
   border-radius: 0.2rem;
   outline: 0;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
   will-change: box-shadow, transform;
 }
 
@@ -177,6 +197,7 @@ a.banner img {
 .btn.active:focus,
 .btn.active.focus {
   outline: 0;
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 
@@ -184,15 +205,17 @@ a.banner img {
   color: #fff;
   background-color: #6e4ef7;
   border-color: #6e4ef7;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(110, 78, 247, 0.14), 0 3px 1px -2px rgba(110, 78, 247, 0.2), 0 1px 5px 0 rgba(110, 78, 247, 0.12);
   box-shadow: 0 2px 2px 0 rgba(110, 78, 247, 0.14), 0 3px 1px -2px rgba(110, 78, 247, 0.2), 0 1px 5px 0 rgba(110, 78, 247, 0.12);
 }
 
 .btn-secondary {
-  color: #8a8a8a;
+  color: #6c757d;
   background-color: transparent;
-  border-color: #d2d2d2;
+  border-color: #6c757d;
   border-style: solid;
   border-width: 1px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
   box-shadow: 0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
 }
 
@@ -226,6 +249,7 @@ a.banner img {
 .btn.btn-primary:focus,
 .btn.btn-primary:active,
 .btn.btn-primary:hover {
+  -webkit-box-shadow: 0 14px 26px -12px rgba(110, 78, 247, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(110, 78, 247, 0.2);
   box-shadow: 0 14px 26px -12px rgba(110, 78, 247, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(110, 78, 247, 0.2);
 }
-
+/*# sourceMappingURL=all.css.map */

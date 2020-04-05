@@ -1,4 +1,4 @@
-const mix = require("laravel-mix");
+const mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -13,8 +13,9 @@ const mix = require("laravel-mix");
 
 //if (!mix.inProduction()) {
 // mix.webpackConfig({
-//     devtool: "inline-source-map"
-// }).sourceMaps();
+//   devtool: 'inline-source-map',
+// });
+//   .sourceMaps();
 //}
 
-mix.sass("resources/sass/all.scss", "public/css").sourceMaps();
+mix.sass('resources/sass/all.scss', 'public/css').sourceMaps();

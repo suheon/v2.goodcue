@@ -1,8 +1,9 @@
 .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1000px;
   margin: 0 auto;
-  align-items: center;
 }
 
 .col-2 {
@@ -21,7 +22,10 @@
 
 @media screen and (max-width: 991px) {
   .contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
 }
+/*# sourceMappingURL=responsive.css.map */
