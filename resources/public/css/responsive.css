@@ -1,0 +1,11 @@
+.contents {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 991px) {
+  .contents {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

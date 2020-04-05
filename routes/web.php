@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+/* PUBLISING 작업 시작 */
+
+/* FRONT */
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('/site/main');
 });
