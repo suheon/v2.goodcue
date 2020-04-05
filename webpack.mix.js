@@ -12,10 +12,11 @@ const mix = require('laravel-mix');
  */
 
 //if (!mix.inProduction()) {
-// mix.webpackConfig({
-//   devtool: 'inline-source-map',
-// });
-//   .sourceMaps();
+mix
+  .webpackConfig({
+    devtool: 'inline-source-map',
+  })
+  .sourceMaps();
 //}
 
-mix.sass('resources/sass/all.scss', 'public/css').sourceMaps();
+mix.sass('resources/scss/all.scss', 'public/css').sourceMaps();

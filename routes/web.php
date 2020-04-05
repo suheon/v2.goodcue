@@ -18,6 +18,17 @@ use Illuminate\Support\Facades\Route;
 
 /* FRONT */
 
-Route::get('/', function () {
+
+Route::get('/pub', function () {
+    return view('/pub');
+});
+
+
+Route::get('/site/main', function () {
     return view('/site/main');
 });
+
+Route::get('/site/main_1', function () {
+    return view('/site/main_1');
+});
+
