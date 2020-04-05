@@ -18,52 +18,25 @@
           <a class="banner">
             <img src="/img/logo.png" alt="좋은큐연구소"/>
           </a>
-          <div class="menu">
-            <ul class="navbar-nav">
-              <li class="dropdown nav-item">
-                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                  <i class="material-icons">apps</i> 큐 체험
-                </a>
-                <!-- <div class="dropdown-menu dropdown-with-icons">
-                  <a href="/recommend.html" class="dropdown-item">큐 추천</a>
-                  <a href="/item/rent_cue.html" class="dropdown-item">큐 시타</a>
-                  <a href="/item/rent_shaft.html" class="dropdown-item">상대 시타</a>
-                  <a href="/item/package.html" class="dropdown-item">Cue Travel Visa</a>
-                  <a href="/item/use-buy.html" class="dropdown-item">써보고 구매</a>
-                  <a href="/item/visit.html" class="dropdown-item">방문 시타</a>
-                  <a href="/theme-shop.html" class="dropdown-item">테마샵</a>
-                </div> -->
+          <div class="menu desktop">
+            <ul>
+              <li>
+                <a href="#"><i class="material-icons">apps</i>큐체험</a>
               </li>
-              <li>큐 이야기 </li>
+              <li>
+                <a href="#"><i class="material-icons">forum</i>큐이야기</a>
+              </li>
+              <li>
+                <a href="#"><i class="material-icons">info</i>공지사항</li></a>
+              </li>
             </ul>
-
-            <!-- <ul class="navbar-nav  mr-auto">
-              <li class="dropdown nav-item">
-
-              
-              </li>
-
-              <li class="dropdown nav-item">
-                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                  <i class="material-icons">forum</i> 큐 이야기
-                </a>
-                <div class="dropdown-menu dropdown-with-icons">
-                  <a href="/rank.html" class="dropdown-item">랭킹</a>
-                  <a href="/review.html" class="dropdown-item">이용후기</a>
-                  <a href="/free-board.html" class="dropdown-item">와글와글</a>
-                  <a href="/trade.html" class="dropdown-item">시세정보</a>
-                  <a href="/youtube.html" class="dropdown-item">좋은큐연구소 TV</a>
-                </div>
-              </li>
-              <li class="nav-item mobile-only">
-                <a href="/notice.html" class="nav-link"><i class="material-icons">info</i> 공지사항</a>
-              </li>
-
-            </ul> -->
-
-
           </div>
-          <div class="search">검색</div>
+          <form class="search" name="search">
+            <input type="text" class="search desktop" placeholder="검색">
+            <button type="submit" class="btn btn-white btn-just-icon btn-round">
+              <i class="material-icons">search</i>
+            </button>
+          </form>
           <div class="private">
             <button type="button" class="btn btn-primary">로그인</button>
             <button type="button" class="btn btn-secondary">회원가입</button>
@@ -72,13 +45,32 @@
       </nav>
       <div class="main">
         <div class="contents">
-          
+          <div class="carousel">
+            <div class="slier-item">
+              <img class="d-block w-100" src="/img/bg.jpg" alt="First slide">
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <i class="material-icons">keyboard_arrow_left</i>
+              <!-- <span class="sr-only">Previous</span> -->
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <i class="material-icons">keyboard_arrow_right</i>
+              <!-- <span class="sr-only">Next</span> -->
+            </a>
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
+            </ol>
+          </div>
 
-          <div class="box-container">
+
+
+          <!-- <div class="box-container">
             <div class="box">1</div>
             <div class="box">2</div>
             <div class="box">3</div>
-          </div>
+          </div> -->
 
         </div>
       </div>
