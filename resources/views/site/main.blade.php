@@ -1,214 +1,363 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <link rel="stylesheet" type="text/css" href="/css/all.css" />
-
-    <title>Document</title>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--     Fonts and icons     -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- Material Kit CSS -->
+    <link href="/css/all.css?v=2.2.0" rel="stylesheet" />
   </head>
-
   <body>
-    <div class="wrapper">
-      <nav>
-        <div class="contents">
-          <a class="banner">
-            <img src="/img/logo.png" alt="좋은큐연구소"/>
-          </a>
-          <div class="menu desktop">
-            <ul>
-              <li>
-                <a href="#"><i class="material-icons">apps</i>큐체험</a>
+    <div class="container">
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-translate">
+            <a class="navbar-brand" href="/site/main">
+              <img class="logo" src="/img/logo.png" alt="좋은큐 연구소 로고" />
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="cue-menu" data-toggle="dropdown">
+                  <i class="material-icons">apps</i> 큐 구매 / 체험
+                </a>
+                <div class="dropdown-menu" aria-labelledby="menu-cue">
+                  <a class="dropdown-item" href="#">menu1</a>
+                  <a class="dropdown-item" href="#">menu3</a>
+                  <a class="dropdown-item" href="#">menu2</a>
+                </div>
               </li>
-              <li>
-                <a href="#"><i class="material-icons">forum</i>큐이야기</a>
-              </li>
-              <li>
-                <a href="#"><i class="material-icons">info</i>공지사항</li></a>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="menu-cue" data-toggle="dropdown">
+                  <i class="material-icons">forum</i> 큐 이야기
+                </a>
+                <div class="dropdown-menu" aria-labelledby="menu-cue">
+                  <a class="dropdown-item" href="#">menu1</a>
+                  <a class="dropdown-item" href="#">menu3</a>
+                  <a class="dropdown-item" href="#">menu2</a>
+                </div>
               </li>
             </ul>
-          </div>
-          <form class="search" name="search">
-            <input type="text" class="search desktop" placeholder="검색">
-            <button type="submit" class="btn btn-white btn-just-icon btn-round">
-              <i class="material-icons">search</i>
-            </button>
-          </form>
-          <div class="private">
-            <button type="button" class="btn btn-primary">로그인</button>
-            <button type="button" class="btn btn-secondary">회원가입</button>
+            <form class="form-inline ml-auto">
+              <div class="form-group bmd-form-group">
+                <input type="text" class="form-control" placeholder="Search" />
+              </div>
+              <button type="submit" class="btn btn-white btn-just-icon btn-round">
+                <i class="material-icons">search</i>
+              </button>
+
+              <button class="btn btn-primary ml-4">로그인</button>
+              <button class="btn btn-outline-secondary">회원가입</button>
+            </form>
           </div>
         </div>
       </nav>
-      <div class="main">
-        <div class="contents">
-          <div class="carousel">
-            <div class="slier-item">
-              <img class="d-block w-100" src="/img/bg.jpg" alt="First slide">
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <i class="material-icons">keyboard_arrow_left</i>
-              <!-- <span class="sr-only">Previous</span> -->
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <i class="material-icons">keyboard_arrow_right</i>
-              <!-- <span class="sr-only">Next</span> -->
-            </a>
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
-            </ol>
-          </div>
 
-
-
-          <!-- <div class="box-container">
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
-          </div> -->
-
-        </div>
-      </div>
-      <footer>
-        <div class="contents">
-          <div class="col-2">
-              <h5>About Us</h5>
-              <ul class="links-vertical">
-                <li>
-                  <a href="#pablo">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a href="#pablo">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#pablo">
-                    Presentation
-                  </a>
-                </li>
-                <li>
-                  <a href="#pablo">
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-2">
-              <h5>Market</h5>
-              <ul class="links-vertical">
-                <li>
-                  <a href="#pablo">
-                    Sales FAQ
-                  </a>
-                </li>
-                <li>
-                  <a href="#pablo">
-                    How to Register
-                  </a>
-                </li>
-                <li>
-                  <a href="#pablo">
-                    Sell Goods
-                  </a>
-                </li>
-                <li>
-                  <a href="#pablo">
-                    Receive Payment
-                  </a>
-                </li>
-                <li>
-                  <a href="#pablo">
-                    Transactions Issues
-                  </a>
-                </li>
-                <li>
-                  <a href="#pablo">
-                    Affiliates Program
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-4">
-              <h5>Social Feed</h5>
-              <div class="social-feed">
-                <div class="feed-line">
-                  <i class="fa fa-twitter"></i>
-                  <p>How to handle ethical disagreements with your clients.</p>
-                </div>
-                <div class="feed-line">
-                  <i class="fa fa-twitter"></i>
-                  <p>The tangible benefits of designing at 1x pixel density.</p>
-                </div>
-                <div class="feed-line">
-                  <i class="fa fa-facebook-square"></i>
-                  <p>A collection of 25 stunning sites that you can use for inspiration.</p>
-                </div>
+      <!-- <div class="page-header header-filter" data-parallax="true" style="background-image: url('/img/bg3.jpg');">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 ml-auto mr-auto">
+              <div class="brand text-center">
+                <h1>Your title here</h1>
+                <h3 class="title text-center">Subtitle</h3>
               </div>
             </div>
-            <div class="col-4">
-              <h5>Follow Us</h5>
-              <ul class="social-buttons">
-                <li>
-                  <a href="#pablo" class="btn btn-just-icon btn-link btn-twitter">
-                    <i class="fa fa-twitter"></i>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="main">
+        <div id="carousel">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Carousel Card -->
+              <div class="card card-raised card-carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="/img/bg2.jpg" alt="First slide" />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h4>
+                          <i class="material-icons">location_on</i>
+                          Yellowstone National Park, United States
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="/img/bg3.jpg" alt="Second slide" />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h4>
+                          <i class="material-icons">location_on</i>
+                          Somewhere Beyond, United States
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="/img/bg.jpg" alt="Third slide" />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h4>
+                          <i class="material-icons">location_on</i>
+                          Yellowstone National Park, United States
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <i class="material-icons">keyboard_arrow_left</i>
+                    <span class="sr-only">Previous</span>
                   </a>
-                </li>
-                <li>
-                  <a href="#pablo" class="btn btn-just-icon btn-link btn-facebook">
-                    <i class="fa fa-facebook-square"></i>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <i class="material-icons">keyboard_arrow_right</i>
+                    <span class="sr-only">Next</span>
                   </a>
-                </li>
-                <li>
-                  <a href="#pablo" class="btn btn-just-icon btn-link btn-dribbble">
-                    <i class="fa fa-dribbble"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#pablo" class="btn btn-just-icon btn-link btn-google">
-                    <i class="fa fa-google-plus"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#pablo" class="btn btn-just-icon btn-link btn-instagram">
-                    <i class="fa fa-instagram"></i>
-                  </a>
-                </li>
-              </ul>
-              <h5>Numbers Don't Lie</h5>
-              <h4>14.521 <small>Freelancers</small></h4>
-              <h4>1.423.183 <small>Transactions</small></h4>
+                </div>
+              </div>
+              <!-- End Carousel Card -->
             </div>
           </div>
         </div>
-      </footer>
+
+        <div class="menu">
+          <div class="row">
+            <div class="col-md-2 col-4 m-border-bottom"><a href="#">뭐 치지?</a></div>
+            <div class="col-md-2 col-4 m-border-bottom"><a href="#">시타</a></div>
+            <div class="col-md-2 col-4 m-border-bottom"><a href="#">큐 구매</a></div>
+            <div class="col-md-2 col-4"><a href="#">내 큐 팔기</a></div>
+            <div class="col-md-2 col-4"><a href="#" class="text-white">시세정보</a></div>
+            <div class="col-md-2 col-4"><a href="#" class="text-white">포인트몰</a></div>
+          </div>
+        </div>
+
+        <div class="main-banner">
+          <img src="/img/banner.jpg" width="100%" />
+        </div>
+
+        <div class="rank">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- <h6>좋은큐 연구소 랭킹</h6> -->
+              <!-- Tabs with icons on Card -->
+              <div class="card card-nav-tabs">
+                <div class="card-header card-header-info">
+                  <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                  <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                      <ul class="nav nav-tabs" data-tabs="tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active show" href="#profile" data-toggle="tab">
+                            랜탈 TOP
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#messages" data-toggle="tab">
+                            조회수 TOP
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#settings" data-toggle="tab">
+                            별점 TOP
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="tab-content text-center">
+                    <div class="tab-pane active show" id="profile">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>No.</th>
+                              <th class="text-center">IMG</th>
+                              <th>큐이름</th>
+                              <th>제조사</th>
+                              <th>조인트</th>
+                              <th>렌탈수</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            @for($i=1;$i<=5;$i++)
+                            <tr>
+                              <th>{{ $i }}</th>
+                              <td>
+                                <div class="img-container"><img src="/img/thumb_cue_01.jpg" alt="..." /></div>
+                              </td>
+                              <td>빅토리아</td>
+                              <td>롱고니</td>
+                              <td>VP</td>
+                              <td>{{ 11 - $i }}</td>
+                            </tr>
+                            @endfor
+                            <tr>
+                              <td colspan="6" class="text-right">
+                                <a href="#" style="text-decoration: underline;">자세히 보기</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="messages">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>No.</th>
+                              <th class="text-center">IMG</th>
+                              <th>큐이름</th>
+                              <th>제조사</th>
+                              <th>조인트</th>
+                              <th>조회수</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            @for($i=1;$i<=5;$i++)
+                            <tr>
+                              <th>{{ $i }}</th>
+                              <td>
+                                <div class="img-container"><img src="/img/thumb_cue_01.jpg" alt="..." /></div>
+                              </td>
+                              <td>빅토리아</td>
+                              <td>롱고니</td>
+                              <td>VP</td>
+                              <td>{{ 11 - $i }}</td>
+                            </tr>
+                            @endfor
+                            <tr>
+                              <td colspan="6" class="text-right">
+                                <a href="#" style="text-decoration: underline;">자세히 보기</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="settings">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>No.</th>
+                              <th class="text-center">IMG</th>
+                              <th>큐이름</th>
+                              <th>제조사</th>
+                              <th>조인트</th>
+                              <th>별점</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            @for($i=1;$i<=5;$i++)
+                            <tr>
+                              <th>{{ $i }}</th>
+                              <td>
+                                <div class="img-container"><img src="/img/thumb_cue_01.jpg" alt="..." /></div>
+                              </td>
+                              <td>빅토리아</td>
+                              <td>롱고니</td>
+                              <td>VP</td>
+                              <td>{{ 11 - $i }}</td>
+                            </tr>
+                            @endfor
+                            <tr>
+                              <td colspan="6" class="text-right">
+                                <a href="#" style="text-decoration: underline;">자세히 보기</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Tabs with icons on Card -->
+            </div>
+          </div>
+
+          <!-- <div class="title">좋은큐 연구소 랭킹</div>
+          <div class="row">
+            <div class="col-4 border-right"><a href="#">랜탈 TOP</a></div>
+            <div class="col-4 border-right"><a href="#">조회수 TOP</a></div>
+            <div class="col-4"><a href="#">별점 TOP</a></div>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- <footer class="footer footer-default">
+        <div class="container">
+          <nav class="float-left">
+            <ul>
+              <li>
+                <a href="https://www.creative-tim.com/">
+                  Creative Tim
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="copyright float-right">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            , made with <i class="material-icons">favorite</i> by
+            <a href="https://www.creative-tim.com/" target="blank">Creative Tim</a> for a better web.
+          </div>
+        </div>
+      </footer> -->
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    {{--
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    --}}
+    <!--   Core JS Files   -->
+    <script src="/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+    <script src="/js/plugins/moment.min.js"></script>
+    <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+    <script src="/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <!--  Google Maps Plugin  -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
+    <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+    <script src="/js/plugins/bootstrap-tagsinput.js"></script>
+    <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+    <script src="/js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
+    <!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+    <script src="/js/plugins/jasny-bootstrap.min.js" type="text/javascript"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+    <script src="/js/material-kit.js?v=2.2.0" type="text/javascript"></script>
   </body>
 </html>

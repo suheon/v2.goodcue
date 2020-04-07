@@ -1,1 +1,145 @@
+$brand-primary: #6e4ef7;
+$btn-secondary-color: #8a8a8a;
+
 @import 'material-kit.scss';
+
+.navbar-brand .logo {
+  width: 150px;
+}
+
+nav button.btn {
+  padding: 0;
+  width: 70px;
+  height: 34px;
+}
+
+.section#carousel {
+  padding-bottom: 0px;
+}
+
+.main {
+  background: transparent;
+  padding-top: 70px;
+}
+
+.card {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.rank {
+  h6 {
+    display: flex;
+  }
+
+  .card {
+    margin-bottom: 30px;
+    margin-top: 35px;
+  }
+}
+
+.menu .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.menu {
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 0.3rem;
+  outline: 0;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  background-image: linear-gradient(60deg, #eeebf9, #6e4ef7);
+  // padding: 15px;
+}
+
+.menu a {
+  color: #555;
+}
+
+.main-banner {
+  margin-bottom: 15px;
+}
+
+.rank {
+  background-color: transparent;
+  text-align: center;
+  border: 0;
+  border-radius: 0.3rem;
+  outline: 0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 600;
+
+  .nav-tabs .nav-item .nav-link {
+    padding: 6px 15px;
+  }
+
+  .card .card-header {
+    padding: 5px 10px;
+  }
+  a {
+    color: #555;
+  }
+  table.table {
+    > thead > tr > th,
+    > thead > tr > td,
+    > tbody > tr > th,
+    > tbody > tr > td {
+      font-size: 12px;
+      padding: 5px;
+      color: #555;
+      font-weight: normal;
+    }
+
+    img {
+      width: 50px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .menu div div {
+    border-right: 1px solid #dee2e6;
+    padding: 15px;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  nav.navbar {
+    padding: 0;
+  }
+  .navbar-brand .logo {
+    width: 120px;
+  }
+  .main {
+    padding-top: 45px;
+  }
+
+  .menu .row {
+    margin: 0;
+  }
+  .menu div div {
+    border-right: 1px solid #dee2e6;
+    padding: 15px;
+
+    &:nth-child(3) {
+      border-right: 0;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+  .menu .m-border-bottom {
+    border-bottom: 1px solid #dee2e6;
+  }
+}
