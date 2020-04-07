@@ -467,6 +467,8 @@
             </div>
           </div>
         </div>
+
+        <div class="theme-shop">테마샵</div>
       </div>
 
       <!-- <footer class="footer footer-default">
