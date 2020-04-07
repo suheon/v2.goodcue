@@ -153,8 +153,8 @@
             <div class="col-md-2 col-4 m-border-bottom"><a href="#">시타</a></div>
             <div class="col-md-2 col-4 m-border-bottom"><a href="#">큐 구매</a></div>
             <div class="col-md-2 col-4"><a href="#">내 큐 팔기</a></div>
-            <div class="col-md-2 col-4"><a href="#" class="text-white">시세정보</a></div>
-            <div class="col-md-2 col-4"><a href="#" class="text-white">포인트몰</a></div>
+            <div class="col-md-2 col-4"><a href="#">시세정보</a></div>
+            <div class="col-md-2 col-4"><a href="#">포인트몰</a></div>
           </div>
         </div>
 
@@ -162,10 +162,31 @@
           <img src="/img/banner.jpg" width="100%" />
         </div>
 
+        <div class="main-youtube">
+          <div class="title"><i class="fa fa-youtube-play"></i> 좋은큐 연구소 Youtube</div>
+          <div class="row">
+            <div class="col-4">
+              <div class="youtube-container">
+                <img src="https://i.ytimg.com/vi/8NlGA9D0aWA/hqdefault.jpg" />
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="youtube-container">
+                <img src="https://i.ytimg.com/vi/cc50jAbp27c/hqdefault.jpg" />
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="youtube-container">
+                <img src="https://i.ytimg.com/vi/3-EjOTvJiCA/hqdefault.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="rank">
           <div class="row">
-            <div class="col-md-12">
-              <!-- <h6>좋은큐 연구소 랭킹</h6> -->
+            <div class="col-md-6">
+              <!-- <h5>좋은큐 연구소 랭킹</h5> -->
               <!-- Tabs with icons on Card -->
               <div class="card card-nav-tabs">
                 <div class="card-header card-header-info">
@@ -174,17 +195,17 @@
                     <div class="nav-tabs-wrapper">
                       <ul class="nav nav-tabs" data-tabs="tabs">
                         <li class="nav-item">
-                          <a class="nav-link active show" href="#profile" data-toggle="tab">
+                          <a class="nav-link active show" href="#rent-top" data-toggle="tab">
                             랜탈 TOP
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#messages" data-toggle="tab">
+                          <a class="nav-link" href="#pv-top" data-toggle="tab">
                             조회수 TOP
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#settings" data-toggle="tab">
+                          <a class="nav-link" href="#point-top" data-toggle="tab">
                             별점 TOP
                           </a>
                         </li>
@@ -194,7 +215,7 @@
                 </div>
                 <div class="card-body">
                   <div class="tab-content text-center">
-                    <div class="tab-pane active show" id="profile">
+                    <div class="tab-pane active show" id="rent-top">
                       <div class="table-responsive">
                         <table class="table">
                           <thead>
@@ -229,7 +250,7 @@
                         </table>
                       </div>
                     </div>
-                    <div class="tab-pane" id="messages">
+                    <div class="tab-pane" id="pv-top">
                       <div class="table-responsive">
                         <table class="table">
                           <thead>
@@ -264,7 +285,147 @@
                         </table>
                       </div>
                     </div>
-                    <div class="tab-pane" id="settings">
+                    <div class="tab-pane" id="point-top">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>No.</th>
+                              <th class="text-center">IMG</th>
+                              <th>큐이름</th>
+                              <th>제조사</th>
+                              <th>조인트</th>
+                              <th>별점</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            @for($i=1;$i<=5;$i++)
+                            <tr>
+                              <th>{{ $i }}</th>
+                              <td>
+                                <div class="img-container"><img src="/img/thumb_cue_01.jpg" alt="..." /></div>
+                              </td>
+                              <td>빅토리아</td>
+                              <td>롱고니</td>
+                              <td>VP</td>
+                              <td>{{ 11 - $i }}</td>
+                            </tr>
+                            @endfor
+                            <tr>
+                              <td colspan="6" class="text-right">
+                                <a href="#" style="text-decoration: underline;">자세히 보기</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Tabs with icons on Card -->
+            </div>
+            <div class="col-md-6">
+              <!-- <h5>좋은큐 연구소 랭킹</h5> -->
+              <!-- Tabs with icons on Card -->
+              <div class="card card-nav-tabs">
+                <div class="card-header card-header-success">
+                  <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                  <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                      <ul class="nav nav-tabs" data-tabs="tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active show" href="#recent-blog" data-toggle="tab">
+                            최근 Blog
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#recent-review" data-toggle="tab">
+                            최근 Review
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#recent-board" data-toggle="tab">
+                            최근 와글와글
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="tab-content text-center">
+                    <div class="tab-pane active show" id="recent-blog">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>No.</th>
+                              <th class="text-center">IMG</th>
+                              <th>큐이름</th>
+                              <th>제조사</th>
+                              <th>조인트</th>
+                              <th>렌탈수</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            @for($i=1;$i<=5;$i++)
+                            <tr>
+                              <th>{{ $i }}</th>
+                              <td>
+                                <div class="img-container"><img src="/img/thumb_cue_01.jpg" alt="..." /></div>
+                              </td>
+                              <td>빅토리아</td>
+                              <td>롱고니</td>
+                              <td>VP</td>
+                              <td>{{ 11 - $i }}</td>
+                            </tr>
+                            @endfor
+                            <tr>
+                              <td colspan="6" class="text-right">
+                                <a href="#" style="text-decoration: underline;">자세히 보기</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="recent-review">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>No.</th>
+                              <th class="text-center">IMG</th>
+                              <th>큐이름</th>
+                              <th>제조사</th>
+                              <th>조인트</th>
+                              <th>조회수</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            @for($i=1;$i<=5;$i++)
+                            <tr>
+                              <th>{{ $i }}</th>
+                              <td>
+                                <div class="img-container"><img src="/img/thumb_cue_01.jpg" alt="..." /></div>
+                              </td>
+                              <td>빅토리아</td>
+                              <td>롱고니</td>
+                              <td>VP</td>
+                              <td>{{ 11 - $i }}</td>
+                            </tr>
+                            @endfor
+                            <tr>
+                              <td colspan="6" class="text-right">
+                                <a href="#" style="text-decoration: underline;">자세히 보기</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="recent-board">
                       <div class="table-responsive">
                         <table class="table">
                           <thead>
@@ -305,13 +466,6 @@
               <!-- End Tabs with icons on Card -->
             </div>
           </div>
-
-          <!-- <div class="title">좋은큐 연구소 랭킹</div>
-          <div class="row">
-            <div class="col-4 border-right"><a href="#">랜탈 TOP</a></div>
-            <div class="col-4 border-right"><a href="#">조회수 TOP</a></div>
-            <div class="col-4"><a href="#">별점 TOP</a></div>
-          </div> -->
         </div>
       </div>
 
