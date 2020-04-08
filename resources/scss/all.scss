@@ -3,6 +3,10 @@ $btn-secondary-color: #8a8a8a;
 
 @import 'material-kit.scss';
 
+// body > div.container {
+//   width: 1140px;
+// }
+
 body {
   background-color: unset;
 }
@@ -72,10 +76,12 @@ nav button.btn {
   margin-bottom: 20px;
 }
 
-.main-youtube {
+.main-youtube,
+.theme-shop {
   margin-bottom: 20px;
 
   .title {
+    font-size: 14px;
     margin: 0;
     margin-left: 10px;
     i.fa-youtube-play {
@@ -113,7 +119,6 @@ nav button.btn {
   border: 0;
   border-radius: 0.3rem;
   outline: 0;
-  margin-bottom: 15px;
   font-size: 14px;
   font-weight: 600;
   margin-top: 60px;
@@ -145,6 +150,37 @@ nav button.btn {
   }
 }
 
+.theme-shop {
+  .title {
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  .card .card-header.card-header-image img {
+    border-radius: 2px;
+  }
+}
+
+.card .card-header.card-header-image .card-title {
+  font-size: 14px;
+  display: flex;
+  width: 100%;
+  height: 60%;
+  left: 0;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  opacity: 0.8;
+  margin-top: 10%;
+}
+
+.card .card-category {
+  color: #555;
+  margin-top: 5px;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .menu div div {
     border-right: 1px solid #dee2e6;
@@ -159,6 +195,7 @@ nav button.btn {
 @media (max-width: 767px) {
   .container {
     padding: 0;
+    max-width: 100%;
   }
 
   nav.navbar {
@@ -176,7 +213,7 @@ nav button.btn {
       //   margin-bottom: 30px;
     }
 
-    .rank .card {
+    .rank .card.card-nav-tabs {
       margin-bottom: 30px;
     }
 
@@ -201,6 +238,29 @@ nav button.btn {
     }
     .menu .m-border-bottom {
       border-bottom: 1px solid #dee2e6;
+    }
+  }
+
+  .theme-shop {
+    padding-top: -30px;
+
+    .card .card-header.card-header-image .card-title {
+      display: flex;
+      width: 100%;
+      height: 60%;
+      left: 0;
+      top: 0;
+      align-items: center;
+      justify-content: center;
+      background-color: #000;
+      opacity: 0.8;
+      margin-top: 10%;
+      font-size: 12px;
+
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
     }
   }
 }

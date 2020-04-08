@@ -78,19 +78,6 @@
         </div>
       </nav>
 
-      <!-- <div class="page-header header-filter" data-parallax="true" style="background-image: url('/img/bg3.jpg');">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 ml-auto mr-auto">
-              <div class="brand text-center">
-                <h1>Your title here</h1>
-                <h3 class="title text-center">Subtitle</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
       <div class="main">
         <div id="carousel">
           <div class="row">
@@ -468,7 +455,46 @@
           </div>
         </div>
 
-        <div class="theme-shop">테마샵</div>
+        <div class="theme-shop">
+          <div class="title"><i class="fa fa-cube"></i> 테마샵</div>
+          <div class="row">
+            <div class="col-4">
+              <div class="card card-blog card-plain">
+                <div class="card-header card-header-image">
+                  <a href="#pablo">
+                    <img src="/img/1.png" alt="" />
+                    <div class="card-title">센놈특집</div>
+                  </a>
+                </div>
+                <div class="card-body"><h6 class="card-category">힘 좋다는 놈들 모아봤소</h6></div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card card-blog card-plain">
+                <div class="card-header card-header-image">
+                  <a href="#pablo">
+                    <img src="/img/2.png" alt="" />
+                    <div class="card-title">가성비 특집</div>
+                  </a>
+                </div>
+                <div class="card-body"><h6 class="card-category">비싸야지 좋은 큐인감</h6></div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card card-blog card-plain">
+                <div class="card-header card-header-image">
+                  <a href="#pablo">
+                    <img src="/img/3.png" alt="" />
+                    <div class="card-title">무사시 함 쳐보자</div>
+                  </a>
+                </div>
+                <div class="card-body"><h6 class="card-category">무사시 함 쳐보자</h6></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- <footer class="footer footer-default">
