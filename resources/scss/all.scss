@@ -3,91 +3,29 @@ $btn-secondary-color: #8a8a8a;
 
 @import 'material-kit.scss';
 
-// body > div.container {
-//   width: 1140px;
-// }
+@import 'layout.scss';
 
-body {
-  background-color: unset;
-}
+@import 'pages/main.scss';
 
-.navbar-brand .logo {
-  width: 150px;
-}
-
-nav button.btn {
-  padding: 0;
-  width: 70px;
-  height: 34px;
-}
-
-.section#carousel {
-  padding-bottom: 0px;
-}
-
-.main {
-  background: white;
-  padding-top: 70px;
-}
-
-.card {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border-radius: unset;
-}
-
-.rank {
-  h5 {
-    display: flex;
-  }
-
-  .card {
-    margin-bottom: 30px;
-    margin-top: 35px;
-  }
-}
-
-.menu .row {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.menu {
-  background-color: white;
-  text-align: center;
-  //   box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
-  //   border: 0;
-  //   border-radius: 0.3rem;
-  //   outline: 0;
+.title {
   font-size: 14px;
+  //   display: flex;
+  margin: 0;
+  margin-left: 10px;
+  //   min-height: 24px;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
   font-weight: 600;
-  margin-bottom: 15px;
-  //   background-image: linear-gradient(60deg, #eeebf9, #6e4ef7);
-  // padding: 15px;
-  border-bottom: 1px solid #dee2e6;
+  //   i.fa {
+  //     margin-right: 5px;
+  //   }
 }
 
-.menu a {
-  color: #555;
-}
+// .main-youtube,
+.theme {
+  padding-bottom: 30px;
 
-.main-banner {
-  margin-bottom: 20px;
-}
-
-.main-youtube,
-.theme-shop {
-  margin-bottom: 20px;
-
-  .title {
-    font-size: 14px;
-    margin: 0;
-    margin-left: 10px;
-    i.fa-youtube-play {
-      color: red;
-    }
-  }
   .row {
     margin: 0;
   }
@@ -95,60 +33,65 @@ nav button.btn {
   .col-4 {
     padding: 0 6px;
   }
-}
 
-.youtube-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  width: 100%;
-
-  img {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    transform: translateY(-50%);
-  }
-}
-
-.rank {
-  background-color: transparent;
-  text-align: center;
-  border: 0;
-  border-radius: 0.3rem;
-  outline: 0;
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 60px;
-
-  .nav-tabs .nav-item .nav-link {
-    padding: 6px 15px;
+  .theme-screen {
+    padding-top: 10px;
   }
 
-  .card .card-header {
-    padding: 5px 10px;
-  }
-  a {
+  .theme-title {
     color: #555;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
   }
-  table.table {
-    > thead > tr > th,
-    > thead > tr > td,
-    > tbody > tr > th,
-    > tbody > tr > td {
-      font-size: 12px;
-      padding: 5px;
-      color: #555;
-      font-weight: normal;
-    }
-
-    img {
-      width: 50px;
-    }
+  .theme-desc {
+    color: #999999;
+    font-size: 12px;
+    text-align: center;
   }
 }
+
+// .theme-shop {
+//   padding-top: -30px;
+
+//   .theme-screen {
+//   }
+
+//   .card .card-header.card-header-image .card-title {
+//     display: flex;
+//     width: 100%;
+//     height: 60%;
+//     left: 0;
+//     top: 0;
+//     align-items: center;
+//     justify-content: center;
+//     background-color: #000;
+//     opacity: 0.8;
+//     margin-top: 10%;
+//     font-size: 12px;
+
+//     &:hover {
+//       background-color: #fff;
+//       color: #000;
+//     }
+//   }
+// }
+
+// .youtube-container {
+//   position: relative;
+//   padding-bottom: 56.25%;
+//   height: 0;
+//   overflow: hidden;
+//   width: 100%;
+
+//   img {
+//     position: absolute;
+//     top: 50%;
+//     left: 0;
+//     width: 100%;
+//     transform: translateY(-50%);
+//   }
+// }
 
 .theme-shop {
   .title {
@@ -193,6 +136,10 @@ nav button.btn {
 }
 
 @media (max-width: 767px) {
+  .navbar .navbar-translate {
+    justify-content: unset;
+  }
+
   .container {
     padding: 0;
     max-width: 100%;
@@ -200,6 +147,8 @@ nav button.btn {
 
   nav.navbar {
     padding: 0;
+    margin-bottom: 0;
+    height: 50px;
   }
   .navbar-brand .logo {
     width: 120px;
@@ -207,14 +156,13 @@ nav button.btn {
   .main {
     padding-top: 50px;
 
-    .card {
-      // margin: 0;
+    .carousel .card {
+      margin-top: 0;
       box-shadow: unset;
-      //   margin-bottom: 30px;
     }
 
     .rank .card.card-nav-tabs {
-      margin-bottom: 30px;
+      margin-bottom: 0px;
     }
 
     .carousel .carousel-indicators li {
@@ -239,28 +187,8 @@ nav button.btn {
     .menu .m-border-bottom {
       border-bottom: 1px solid #dee2e6;
     }
-  }
-
-  .theme-shop {
-    padding-top: -30px;
-
-    .card .card-header.card-header-image .card-title {
-      display: flex;
-      width: 100%;
-      height: 60%;
-      left: 0;
-      top: 0;
-      align-items: center;
-      justify-content: center;
-      background-color: #000;
-      opacity: 0.8;
-      margin-top: 10%;
-      font-size: 12px;
-
-      &:hover {
-        background-color: #fff;
-        color: #000;
-      }
+    .card {
+      box-shadow: none;
     }
   }
 }
