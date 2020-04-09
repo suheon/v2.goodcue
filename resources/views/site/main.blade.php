@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <title>Hello, world!</title>
     <!-- Required meta tags -->
@@ -10,7 +10,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"
     />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
     <!-- Material Kit CSS -->
@@ -496,29 +496,57 @@
           </div>
         </div>
       </div>
-
-      <!-- <footer class="footer footer-default">
-        <div class="container">
-          <nav class="float-left">
-            <ul>
-              <li>
-                <a href="https://www.creative-tim.com/">
-                  Creative Tim
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="copyright float-right">
-            &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            , made with <i class="material-icons">favorite</i> by
-            <a href="https://www.creative-tim.com/" target="blank">Creative Tim</a> for a better web.
-          </div>
-        </div>
-      </footer> -->
     </div>
+
+    <footer class="footer footer-black">
+      <div class="container">
+        <a class="footer-brand" href="#pablo">Material Kit PRO</a>
+        <ul class="pull-center">
+          <li>
+            <a href="#pablo">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="#pablo">
+              Presentation
+            </a>
+          </li>
+          <li>
+            <a href="#pablo">
+              Discover
+            </a>
+          </li>
+          <li>
+            <a href="#pablo">
+              Payment
+            </a>
+          </li>
+          <li>
+            <a href="#pablo">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+        <ul class="social-buttons float-right">
+          <li>
+            <a href="https://twitter.com/CreativeTim" target="_blank" class="btn btn-just-icon btn-link">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-just-icon btn-link">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/CreativeTimOfficial" target="_blank" class="btn btn-just-icon btn-link">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <!--   Core JS Files   -->
     <script src="/js/core/jquery.min.js" type="text/javascript"></script>
