@@ -510,7 +510,7 @@
             </a>
             <div class="theme-screen">
               <div class="theme-title">센놈특집</div>
-              <div class="theme-desc">힘 좋다는 놈들 모아봤소</div>
+              <div class="theme-desc text-truncate">힘 좋다는 놈들 모아봤소</div>
             </div>
           </div>
           <div class="col-4">
@@ -521,7 +521,7 @@
             </div>
             <div class="theme-screen">
               <div class="theme-title">가성비 특집</div>
-              <div class="theme-desc">비싸야지 좋은 큐인감</div>
+              <div class="theme-desc text-truncate">비싸야지 좋은 큐인감</div>
             </div>
           </div>
 
@@ -533,7 +533,7 @@
             </div>
             <div class="theme-screen">
               <div class="theme-title">무사시 함 쳐보자</div>
-              <div class="theme-desc">아놔! 무사시가 뭐길레</div>
+              <div class="theme-desc text-truncate">아놔! 무사시가 뭐길레</div>
             </div>
           </div>
         </div>
@@ -546,7 +546,7 @@
             </div>
             <div class="theme-screen">
               <div class="theme-title">센놈특집</div>
-              <div class="theme-desc">힘 좋다는 놈들 모아봤소</div>
+              <div class="theme-desc text-truncate">힘 좋다는 놈들 모아봤소</div>
             </div>
           </div>
           <div class="col-4">
@@ -557,7 +557,7 @@
             </div>
             <div class="theme-screen">
               <div class="theme-title">가성비 특집</div>
-              <div class="theme-desc">비싸야지 좋은 큐인감</div>
+              <div class="theme-desc text-truncate">비싸야지 좋은 큐인감</div>
             </div>
           </div>
 
@@ -569,7 +569,7 @@
             </div>
             <div class="theme-screen">
               <div class="theme-title">무사시 함 쳐보자</div>
-              <div class="theme-desc">아놔! 무사시가 뭐길레</div>
+              <div class="theme-desc text-truncate">아놔! 무사시가 뭐길레</div>
             </div>
           </div>
         </div>
