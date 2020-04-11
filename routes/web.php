@@ -32,3 +32,7 @@ Route::get('/site/main_1', function () {
     return view('/site/main_1');
 });
 
+
+Route::get('/site/login', function () {
+    return view('/site/login');
+});

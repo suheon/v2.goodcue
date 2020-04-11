@@ -24,6 +24,22 @@
     a {
       color: #555;
     }
+
+    div {
+      div {
+        border-right: 1px solid #dee2e6;
+        padding: 10px;
+
+        &:last-child {
+          border-right: 0;
+        }
+
+        &:hover {
+          color: #8a8a8a;
+          background-color: rgba(153, 153, 153, 0.2);
+        }
+      }
+    }
   }
 
   .main-banner {
@@ -142,6 +158,47 @@
       border-radius: 6px;
       -webkit-box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
       box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    .carousel .card {
+      margin-top: 0;
+      //   box-shadow: unset;
+    }
+
+    .rank .card.card-nav-tabs {
+      margin-bottom: 0px;
+    }
+
+    .carousel .carousel-indicators li {
+      width: 6px;
+      height: 6px;
+    }
+    .menu .row {
+      margin: 0;
+    }
+    .menu div div {
+      border-right: 1px solid #dee2e6;
+      padding: 15px;
+
+      &:nth-child(3) {
+        border-right: 0;
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+    .menu .m-border-bottom {
+      border-bottom: 1px solid #dee2e6;
+    }
+    .rank {
+      .card {
+        box-shadow: none;
+      }
     }
   }
 }

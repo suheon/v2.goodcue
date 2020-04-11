@@ -21,7 +21,7 @@
   </head>
   <body class="menu-on-left">
     <!-- header -->
-    <nav class="navbar fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+    <nav class="navbar fixed-top navbar-expand-lg">
       <div class="container">
         <div class="navbar-translate">
           <button
@@ -40,33 +40,69 @@
           <a class="navbar-brand" href="/site/main">
             <img class="logo" src="/img/logo.png" alt="좋은큐 연구소 로고" />
           </a>
+
+          <div class="mobile-menu ml-auto pr-2">
+            <button type="submit" class="btn btn-white btn-just-icon btn-round">
+              <i class="material-icons">search</i>
+            </button>
+          </div>
         </div>
 
         <div class="collapse navbar-collapse">
+          <div class="navbar-nav mobile-menu">
+            <div class="nav-item my-4 d-flex justify-content-center mx-4">
+              <a href="/site/login" class="btn btn-primary mr-2" role="button">로그인</a>
+              <a href="/site/register" class="btn btn-outline-secondary">회원가입</a>
+            </div>
+          </div>
+
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="cue-menu" data-toggle="dropdown">
-                <i class="material-icons">apps</i> 큐 구매 / 체험
+                <i class="material-icons">apps</i> 시타
               </a>
               <div class="dropdown-menu" aria-labelledby="menu-cue">
-                <a class="dropdown-item" href="#">menu1</a>
-                <a class="dropdown-item" href="#">menu3</a>
-                <a class="dropdown-item" href="#">menu2</a>
+                <a class="dropdown-item" href="#">뭐치지?</a>
+                <a class="dropdown-item" href="#">큐 시타</a>
+                <a class="dropdown-item" href="#">상대 시타</a>
+                <a class="dropdown-item" href="#">방문 시타</a>
+                <a class="dropdown-item" href="#">Cue Travel Visa</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="cue-menu" data-toggle="dropdown">
+                <i class="material-icons">repeat</i> 거래
+              </a>
+              <div class="dropdown-menu" aria-labelledby="menu-cue">
+                <a class="dropdown-item" href="#">신품주문</a>
+                <a class="dropdown-item" href="#">좋은큐연구소 진단 큐</a>
+                <a class="dropdown-item" href="#">회원 직거래 큐</a>
+                <a class="dropdown-item" href="#">포인트 몰</a>
+                <a class="dropdown-item" href="#">판매위탁</a>
+                <a class="dropdown-item" href="#">직거래</a>
               </div>
             </li>
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="menu-cue" data-toggle="dropdown">
-                <i class="material-icons">forum</i> 큐 이야기
+                <i class="material-icons">forum</i> CONTENTS
               </a>
               <div class="dropdown-menu" aria-labelledby="menu-cue">
-                <a class="dropdown-item" href="#">menu1</a>
-                <a class="dropdown-item" href="#">menu3</a>
-                <a class="dropdown-item" href="#">menu2</a>
+                <a class="dropdown-item" href="#">시세정보</a>
+                <!-- <a class="dropdown-item" href="#">이용후기</a> -->
+                <a class="dropdown-item" href="#">자유게시판</a>
+                <a class="dropdown-item" href="#">랭킹</a>
+                <!-- <a class="dropdown-item" href="#">Youtube</a> -->
+                <a class="dropdown-item" href="#">좋은큐연구소 큐 평가</a>
+                <!-- <a class="dropdown-item" href="#">테마샵</a> -->
               </div>
             </li>
-            <li class="nav-item mobile-only">
-              <a href="/notice.html" class="nav-link"><i class="material-icons">info</i> 공지사항</a>
+            <li class="nav-item">
+              <a href="/notice.html" class="nav-link"><i class="material-icons">info</i> 공지</a>
+            </li>
+            <li class="nav-item">
+              <a href="/notice.html" class="nav-link"><i class="material-icons">help</i> HELP</a>
             </li>
           </ul>
           <form class="form-inline ml-auto">
@@ -77,8 +113,9 @@
               <i class="material-icons">search</i>
             </button>
 
-            <button class="btn btn-primary ml-4">로그인</button>
-            <button class="btn btn-outline-secondary">회원가입</button>
+            <!-- <button class="btn btn-primary ml-4">로그인</button> -->
+            <a class="btn btn-primary ml-4">로그인</a>
+            <a class="btn btn-outline-secondary">회원가입</a>
           </form>
         </div>
       </div>
@@ -93,12 +130,12 @@
             <div class="card card-raised card-carousel">
               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
                 <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
-                  <div class="carousel-item">
+                  <div class="carousel-item active">
                     <img class="d-block w-100" src="/img/bg2.jpg" alt="First slide" />
                     <div class="carousel-caption d-none d-md-block">
                       <h4>
@@ -107,7 +144,7 @@
                       </h4>
                     </div>
                   </div>
-                  <div class="carousel-item active">
+                  <div class="carousel-item">
                     <img class="d-block w-100" src="/img/bg3.jpg" alt="Second slide" />
                     <div class="carousel-caption d-none d-md-block">
                       <h4>
@@ -541,7 +578,7 @@
 
     <footer class="footer footer-black">
       <div class="container">
-        <a class="footer-brand" href="/">좋은큐 연구소</a>
+        <a class="footer-brand" href="/">좋은큐연구소</a>
         <ul class="pull-center">
           <li>
             <a href="#pablo">
