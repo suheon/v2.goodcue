@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <title>Hello, world!</title>
+    <title>좋은큐연구소</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
 
     <!-- Material Kit CSS -->
-    <link href="/css/all.css?v=2.2.0" rel="stylesheet" />
+    <!-- <link href="/css/all.css?v=2.2.0" rel="stylesheet" /> -->
+    <link href="{{ mix('/css/all.css') }}" rel="stylesheet" />
   </head>
   <body class="menu-on-left">
     <!-- header -->
@@ -63,6 +64,9 @@
                 <a class="dropdown-item" href="#">menu3</a>
                 <a class="dropdown-item" href="#">menu2</a>
               </div>
+            </li>
+            <li class="nav-item mobile-only">
+              <a href="/notice.html" class="nav-link"><i class="material-icons">info</i> 공지사항</a>
             </li>
           </ul>
           <form class="form-inline ml-auto">
@@ -459,28 +463,28 @@
       </div>
 
       <div class="theme">
-        <div class="title">테마샵</div>
+        <div class="title">
+          테마샵<span class="ml-auto pr-1"><a href="#">전체보기</a></span>
+        </div>
         <div class="row">
           <div class="col-4">
-            <div class="theme-img">
-              <a href="/theme-shop/1">
-                <img src="/img/1.png" width="100%" alt="" />
-                <div class="theme-screen">
-                  <div class="theme-title">센놈특집</div>
-                  <div class="theme-desc">힘 좋다는 놈들 모아봤소</div>
-                </div>
-              </a>
+            <a class="theme-img" href="/theme-shop/1">
+              <img src="/img/1.png" width="100%" alt="" />
+            </a>
+            <div class="theme-screen">
+              <div class="theme-title">센놈특집</div>
+              <div class="theme-desc">힘 좋다는 놈들 모아봤소</div>
             </div>
           </div>
           <div class="col-4">
             <div class="theme-img">
               <a href="/theme-shop/1">
                 <img src="/img/2.png" width="100%" alt="" />
-                <div class="theme-screen">
-                  <div class="theme-title">가성비 특집</div>
-                  <div class="theme-desc">비싸야지 좋은 큐인감</div>
-                </div>
               </a>
+            </div>
+            <div class="theme-screen">
+              <div class="theme-title">가성비 특집</div>
+              <div class="theme-desc">비싸야지 좋은 큐인감</div>
             </div>
           </div>
 
@@ -488,56 +492,51 @@
             <div class="theme-img">
               <a href="/theme-shop/1">
                 <img src="/img/3.png" width="100%" alt="" />
-                <div class="theme-screen">
-                  <div class="theme-title">무사시 함 쳐보자</div>
-                  <div class="theme-desc">아놔! 무사시가 뭐길레</div>
-                </div>
               </a>
+            </div>
+            <div class="theme-screen">
+              <div class="theme-title">무사시 함 쳐보자</div>
+              <div class="theme-desc">아놔! 무사시가 뭐길레</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="theme-img">
+              <a href="/theme-shop/1">
+                <img src="/img/4.png" width="100%" alt="" />
+              </a>
+            </div>
+            <div class="theme-screen">
+              <div class="theme-title">센놈특집</div>
+              <div class="theme-desc">힘 좋다는 놈들 모아봤소</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="theme-img">
+              <a href="/theme-shop/1">
+                <img src="/img/5.png" width="100%" alt="" />
+              </a>
+            </div>
+            <div class="theme-screen">
+              <div class="theme-title">가성비 특집</div>
+              <div class="theme-desc">비싸야지 좋은 큐인감</div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="theme-img">
+              <a href="/theme-shop/1">
+                <img src="/img/6.png" width="100%" alt="" />
+              </a>
+            </div>
+            <div class="theme-screen">
+              <div class="theme-title">무사시 함 쳐보자</div>
+              <div class="theme-desc">아놔! 무사시가 뭐길레</div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- <div class="theme-shop">
-        <div class="title">테마샵</div>
-        <div class="row">
-          <div class="col-4">
-            <div class="card card-blog card-plain">
-              <div class="card-header card-header-image">
-                <a href="#pablo">
-                  <img src="/img/1.png" alt="" />
-                  <div class="card-title">센놈특집</div>
-                </a>
-              </div>
-              <div class="card-body"><h6 class="card-category">힘 좋다는 놈들 모아봤소</h6></div>
-            </div>
-          </div>
-
-          <div class="col-4">
-            <div class="card card-blog card-plain">
-              <div class="card-header card-header-image">
-                <a href="#pablo">
-                  <img src="/img/2.png" alt="" />
-                  <div class="card-title">가성비 특집</div>
-                </a>
-              </div>
-              <div class="card-body"><h6 class="card-category">비싸야지 좋은 큐인감</h6></div>
-            </div>
-          </div>
-
-          <div class="col-4">
-            <div class="card card-blog card-plain">
-              <div class="card-header card-header-image">
-                <a href="#pablo">
-                  <img src="/img/3.png" alt="" />
-                  <div class="card-title">무사시 함 쳐보자</div>
-                </a>
-              </div>
-              <div class="card-body"><h6 class="card-category">무사시 함 쳐보자</h6></div>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
 
     <footer class="footer footer-black">

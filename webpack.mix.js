@@ -19,4 +19,7 @@ mix
   .sourceMaps();
 //}
 
-mix.sass('resources/scss/all.scss', 'public/css').sourceMaps();
+mix
+  .sass('resources/scss/all.scss', 'public/css')
+  .version()
+  .sourceMaps();

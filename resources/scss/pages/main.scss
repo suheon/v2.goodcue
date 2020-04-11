@@ -28,6 +28,8 @@
 
   .main-banner {
     margin-bottom: 20px;
+    -webkit-box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
   }
 
   .rank {
@@ -56,8 +58,9 @@
     .card .card-header {
       padding: 5px 10px;
     }
-    a {
+    table tr td a {
       color: #555;
+      text-decoration: underline;
     }
     table.table {
       margin-bottom: 0;
@@ -75,6 +78,70 @@
       img {
         width: 50px;
       }
+    }
+  }
+
+  .theme {
+    padding-bottom: 30px;
+
+    .title {
+      span a {
+        color: #555;
+        text-decoration: underline;
+        font-size: 14px;
+      }
+    }
+    .row {
+      margin: 0 0 20px 0;
+    }
+
+    .col-4 {
+      padding: 0 6px;
+    }
+
+    .theme-screen {
+      padding-top: 10px;
+      line-height: 1.2rem;
+      text-align: center;
+      .theme-title {
+        color: #555;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .theme-desc {
+        color: #999999;
+        font-size: 12px;
+      }
+    }
+
+    .theme-img {
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+      }
+
+      &:hover {
+        background: #508dee;
+        opacity: 0.45;
+        z-index: 300;
+        border-radius: 6px;
+        &::after {
+          background: transparent;
+          opacity: 0;
+          -webkit-transition: background 0.2s, opacity 0.2s;
+          transition: background 0.2s, opacity 0.2s;
+        }
+      }
+    }
+
+    img {
+      border-radius: 6px;
+      -webkit-box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     }
   }
 }
