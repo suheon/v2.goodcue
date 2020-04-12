@@ -168,20 +168,6 @@
       <div class="login-panel col-lg-5 col-10">
         <form class="form" method="" action="">
           <div class="card card-login card-hidden">
-            <!-- <div class="card-header card-header-primary text-center">
-              <h4 class="card-title">로 그 인</h4>
-              <div class="social-line">
-                <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
-                  <i class="fab fa-facebook-square"></i>
-                </a>
-                <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
-                  <i class="fab fa-google-plus"></i>
-                </a>
-              </div>
-            </div> -->
             <div class="card-body ">
               <h3 class="card-title text-center">로그인</h3>
               <span class="bmd-form-group">
@@ -212,10 +198,10 @@
             <p class="card-description text-center">OR SNS Login</p>
 
             <div class="sns-btn d-flex justify-content-center p-4">
-              <a href="/sns/login/naver" data-name="sns_login" class="col-6 pr-2">
+              <a href="/sns/login/naver" data-name="sns_login" class="col-6 text-left">
                 <img src="/img/btn-naver.png" alt="네이버 로그인" />
               </a>
-              <a href="/sns/login/kakao" data-name="sns_login" class="col-6 pl-2">
+              <a href="/sns/login/kakao" data-name="sns_login" class="col-6 text-right">
                 <img src="/img/btn-kakao.png" alt="카카오 로그인" />
               </a>
             </div>

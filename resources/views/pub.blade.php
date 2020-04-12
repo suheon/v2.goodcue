@@ -4,9 +4,11 @@
     <ol>
       <li><a href="/site/main">메인화면(로그인 전)</a></li>
       <li><a href="/site/main_1">메인화면(로그인 후)</a></li>
+
       <li><a href="/site/login">로그인</a></li>
-      <li><a href="/site/register">회원가입</a></li>
-      <li><a href="/site/register-sns">회원가입(SNS)</a></li>
+      <li><a href="/site/register/step01">회원가입-step01</a></li>
+      <li><a href="/site/register/step02">회원가입-step02</a></li>
+      <li><a href="/site/register/step02-sns">회원가입(SNS)</a></li>
     </ol>
     <br />
     <br /><br /><br /><br /><br /><br />

@@ -13,34 +13,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
 /* PUBLISING 작업 시작 */
 
 /* FRONT */
 
-
 Route::get('/pub', function () {
-    return view('/pub');
+  return view('/pub');
 });
-
 
 Route::get('/site/main', function () {
-    return view('/site/main');
-});
+  return view('/site/main');
+})->name('main');
 
+// 로그인 후의 메인 layout
 Route::get('/site/main_1', function () {
-    return view('/site/main_1');
+  return view('/site/main_1');
 });
-
 
 Route::get('/site/login', function () {
-    return view('/site/login');
-});
+  return view('/site/login');
+})->name('login');
 
 Route::get('/site/register/step01', function () {
-    return view('/site/register');
-});
+  return view('/site/register-step01');
+})->name('register-01');
 
-Route::get('/site/register/step02', function() {
-    return view('/site/register-step02');
-});
+Route::get('/site/register/step02', function () {
+  return view('/site/register-step02');
+})->name('register-02');
+
+Route::get('/site/register/step02-sns', function () {
+  return view('/site/register-step02-sns');
+})->name('register-02');

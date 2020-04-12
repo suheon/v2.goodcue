@@ -166,9 +166,14 @@
     <!-- main body -->
     <div class="container register d-flex flex-column justify-content-center align-items-center">
       <div class="register-panel col-lg-5 col-10">
+
         <button type="button" class="btn btn-lg btn-primary">휴대폰 본인 인증하기</button>
 
+        <p>좋은큐 연구소 회원 가입은 휴대전화를 통한 본인 확인 후 진행됩니다.</p>
+        
         <p>※ 본인인증 방법 설명</p>
+
+
       </div>
     </div>
 

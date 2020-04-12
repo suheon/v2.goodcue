@@ -1,5 +1,78 @@
 .register {
-  .btn {
+  .btn.btn-primary {
     width: 100%;
+    letter-spacing: 5px;
+    height: 56px;
+    font-size: 16px;
+  }
+
+  .card-register {
+    padding-bottom: 15px;
+
+    .card-body {
+      padding: 15px 30px 0px 10px;
+
+      .input-group {
+        padding-bottom: 7px;
+        margin: 27px 0 0 0;
+
+        .help-btn {
+          border: 0;
+          background-color: transparent;
+          top: 10px;
+          position: relative;
+          color: #f73535;
+          cursor: pointer;
+        }
+      }
+
+      .bootstrap-select:not([class*='col-']):not([class*='form-control']):not(.input-group-btn) {
+        width: 100%;
+      }
+
+      div.col-12 {
+        padding-right: 0;
+        font-size: 14px;
+        button {
+          font-size: 14px;
+        }
+      }
+      .form-group.bmd-form-group {
+        padding-top: 0px;
+      }
+      .inputFileVisible,
+      .cue,
+      .nickname {
+        padding-left: 20px;
+      }
+    }
+
+    .agree {
+      padding-top: 50px;
+      padding-left: 30px;
+
+      .clause-form {
+        padding-right: 25px;
+        ul {
+          list-style: none;
+          padding: 0;
+          border-top: 1px solid #d2d2d2;
+          padding-top: 20px;
+          li {
+            display: flex;
+            justify-content: space-between;
+            .more {
+              margin-top: 5px;
+              a {
+                text-decoration: underline;
+              }
+            }
+            .form-check {
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
   }
 }
