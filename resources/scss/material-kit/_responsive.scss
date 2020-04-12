@@ -44,7 +44,7 @@
     text-align: left;
     padding-right: 0;
     padding-left: 0;
-
+    left: -50px;
     max-height: none !important;
 
     @include transform-translate-x(245px);

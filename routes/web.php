@@ -36,3 +36,11 @@ Route::get('/site/main_1', function () {
 Route::get('/site/login', function () {
     return view('/site/login');
 });
+
+Route::get('/site/register/step01', function () {
+    return view('/site/register');
+});
+
+Route::get('/site/register/step02', function() {
+    return view('/site/register-step02');
+});

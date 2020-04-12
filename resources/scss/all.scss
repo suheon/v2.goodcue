@@ -1,11 +1,17 @@
 $brand-primary: #6e4ef7;
 $btn-secondary-color: #8a8a8a;
 
+// $purple-400: #927af5 !default;
+
+// $purple-700: #552ff7 !default;
+
 @import 'material-kit.scss';
 
 @import 'layout.scss';
 
 @import 'pages/main.scss';
+@import 'pages/login.scss';
+@import 'pages/register.scss';
 
 .title {
   font-size: 16px;

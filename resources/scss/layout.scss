@@ -40,9 +40,14 @@ footer.footer {
   display: none;
 }
 
-@media (max-width: 767px) {
-  .container {
+@media (max-width: 991px) {
+  //@media (max-width: 767px) {
+  body > div.container {
     padding: 0;
+    max-width: 100%;
+  }
+
+  body > nav.navbar > div.container {
     max-width: 100%;
   }
 

@@ -164,7 +164,71 @@
     </nav>
 
     <!-- main body -->
-    <div class="container main"></div>
+    <div class="container login d-flex flex-column justify-content-center align-items-center">
+      <div class="login-panel col-lg-5 col-10">
+        <form class="form" method="" action="">
+          <div class="card card-login card-hidden">
+            <!-- <div class="card-header card-header-primary text-center">
+              <h4 class="card-title">로 그 인</h4>
+              <div class="social-line">
+                <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
+                  <i class="fab fa-google-plus"></i>
+                </a>
+              </div>
+            </div> -->
+            <div class="card-body ">
+              <h3 class="card-title text-center">로그인</h3>
+              <span class="bmd-form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="material-icons">face</i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="사용자 아이디 OR 이메일" />
+                </div>
+              </span>
+              <span class="bmd-form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="material-icons">lock_outline</i>
+                    </span>
+                  </div>
+                  <input type="password" class="form-control" placeholder="비밀번호" />
+                </div>
+              </span>
+            </div>
+            <div class="card-footer justify-content-center flex-fill p-4">
+              <button type="submit" class="btn btn-primary">로 그 인</button>
+            </div>
+
+            <p class="card-description text-center">OR SNS Login</p>
+
+            <div class="sns-btn d-flex justify-content-center p-4">
+              <a href="/sns/login/naver" data-name="sns_login" class="col-6 pr-2">
+                <img src="/img/btn-naver.png" alt="네이버 로그인" />
+              </a>
+              <a href="/sns/login/kakao" data-name="sns_login" class="col-6 pl-2">
+                <img src="/img/btn-kakao.png" alt="카카오 로그인" />
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="login-other col-lg-5 col-10">
+        <div class="row">
+          <a href="/find-auth" class="col-6 text-right">아이디/비밀번호 찾기</a>
+          <a href="/site/register" class="col-6 text-left">회원가입 하기</a>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer footer-black">
       <div class="container">
