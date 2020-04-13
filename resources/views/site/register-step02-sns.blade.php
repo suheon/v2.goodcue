@@ -93,7 +93,6 @@
           </div>
         </div>
 
-
         <div class="card-footer justify-content-center flex-fill p-4">
           <button type="submit" class="btn btn-primary">회 원 가 입</button>
         </div>
