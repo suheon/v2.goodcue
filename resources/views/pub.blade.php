@@ -2,7 +2,7 @@
   <body>
     <h3>퍼블리싱 결과파일</h3>
     <ol>
-      <li><a href="/site/main">메인화면(로그인 전)</a></li>
+      <li><a href="/">메인화면(로그인 전)</a></li>
       <li><a href="/site/main_1">메인화면(로그인 후)</a></li>
 
       <li><a href="/site/login">로그인</a></li>
@@ -17,7 +17,7 @@
 
       <li><a href="/site/register/step02-sns">회원가입(SNS)</a></li>
 
-      <li><a href="/site/auth">아이디/비밀번호 찾기</a></li>
+      <li><a href="/site/find-auth">아이디/비밀번호 찾기</a></li>
 
       <li><a href="/site/serach">검색(모바일)</a></li>
 

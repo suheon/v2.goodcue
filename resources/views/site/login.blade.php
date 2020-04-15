@@ -210,7 +210,7 @@
       </div>
       <div class="login-other col-lg-5 col-10">
         <div class="row">
-          <a href="/find-auth" class="col-6 text-right">아이디/비밀번호 찾기</a>
+          <a href="/site/find-auth" class="col-6 text-right">아이디/비밀번호 찾기</a>
           <a href="/site/register" class="col-6 text-left">회원가입 하기</a>
         </div>
       </div>
