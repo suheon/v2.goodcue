@@ -46,7 +46,14 @@ Route::get('/site/register/step02-sns', function () {
   return view('/site/register-step02-sns');
 })->name('register-02');
 
-
 Route::get('/site/find-auth', function() {
     return view('/site/find-auth');
+});
+
+Route::get('/item/recommend', function() {
+  return view('/item/recommend');
+});
+
+Route::get('/item/recommend/goodcue', function() {
+  return view('/item/recommend/goodcue');
 });

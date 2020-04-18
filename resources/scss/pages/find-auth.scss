@@ -1,10 +1,59 @@
 .find-auth {
-  //   .card-header {
-  //     border: 1px solid #dee2e6;
-  //     box-shadow: none !important;
+  .title {
+    font-size: 20px;
+    margin-bottom: 1.2rem;
+  }
 
-  //     .nav-tabs .nav-item .nav-link {
-  //       color: #3c4858 !important;
-  //     }
-  //   }
+  .auth-panel {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    padding: 0px;
+
+    .nav-tabs {
+      padding: 0;
+
+      .nav-item {
+        .nav-link {
+          font-size: 16px;
+          font-weight: bold;
+          color: #495057 !important;
+          background-color: #f7f7f7;
+          border-radius: 0;
+          padding: 20px 0;
+          &.active {
+            background-color: #fff;
+            border-color: #dee2e6 #dee2e6 #fff;
+            box-shadow: none;
+            // border-bottom: 1px solid #dee2e6 !important;
+          }
+        }
+      }
+
+      // border-bottom: 1px solid #dee2e6;
+    }
+
+    .tab-content {
+      padding: 30px;
+      form {
+        margin-bottom: 0px;
+      }
+      .form-group {
+        &.bmd-form-group {
+          padding-top: 15px;
+        }
+      }
+      .btn {
+        line-height: 1.1;
+        padding: 0 15px;
+        margin: 0;
+      }
+
+      .btn.btn-primary {
+        width: 100%;
+        letter-spacing: 5px;
+        height: 56px;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+    }
+  }
 }

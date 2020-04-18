@@ -21,7 +21,7 @@
 
       <li><a href="/site/serach">검색(모바일)</a></li>
 
-      <li><a href="/site/serach">검색결과</a></li>
+      <!-- <li><a href="/site/serach">검색결과</a></li> -->
 
       <li><a href="/item/recommend">뭐치지? (구분)</a></li>
 
