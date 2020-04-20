@@ -27,6 +27,8 @@
       <div class="col-lg-6">
         <div class="recommend_cate"><a href="/item/recommend/hot">인기 좋은 큐</a></div>
       </div>
+    </div>
+    <div class="row">
       <div class="col-lg-6">
         <div class="recommend_cate"><a href="/item/recommend/review">평가 좋은 큐</a></div>
       </div>

@@ -198,12 +198,14 @@
             <p class="card-description text-center">OR SNS Login</p>
 
             <div class="sns-btn d-flex justify-content-center p-4">
-              <a href="/sns/login/naver" data-name="sns_login" class="col-6 text-left">
-                <img src="/img/btn-naver.png" alt="네이버 로그인" />
-              </a>
-              <a href="/sns/login/kakao" data-name="sns_login" class="col-6 text-right">
-                <img src="/img/btn-kakao.png" alt="카카오 로그인" />
-              </a>
+              <div class="row">
+                <a href="/sns/login/naver" data-name="sns_login" class="col-6 text-left">
+                  <img src="/img/btn-naver.png" alt="네이버 로그인" />
+                </a>
+                <a href="/sns/login/kakao" data-name="sns_login" class="col-6 text-right">
+                  <img src="/img/btn-kakao.png" alt="카카오 로그인" />
+                </a>
+              </div>
             </div>
           </div>
         </form>

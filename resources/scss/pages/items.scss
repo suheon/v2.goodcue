@@ -9,8 +9,12 @@
     margin-bottom: 20px;
 
     .row {
+      width: 100%;
       div {
         margin-bottom: 15px;
+      }
+      & + .row {
+        padding-top: 100px;
       }
     }
     .recommend_cate {
@@ -30,10 +34,22 @@
     }
   }
 }
+@media (max-width: 991px) {
+  .recommend {
+    .cate {
+      .row {
+        & + .row {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
 
 .item {
   .breadcrumb {
     font-size: 12px;
     background-color: transparent;
+    padding-top: 20px;
   }
 }

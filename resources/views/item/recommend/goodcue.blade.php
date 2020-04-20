@@ -11,7 +11,7 @@
       <li class="breadcrumb-item">
         <a href="/"><span class="material-icons">home</span></a>
       </li>
-      <li class="breadcrumb-item"><a href="/">뭐 치지 ?</a></li>
+      <li class="breadcrumb-item"><a href="/item/recommend">뭐 치지 ?</a></li>
       <li class="breadcrumb-item active" aria-current="page">좋은큐 연구소 추천</li>
     </ol>
   </nav>
