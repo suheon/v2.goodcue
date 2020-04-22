@@ -1,6 +1,17 @@
 .recommend {
   .breadcrumb {
     background-color: #fff;
+    .breadcrumb-item {
+      font-size: 12px;
+      .material-icons {
+        font-size: 14px;
+        margin-top: -2px;
+      }
+
+      &.active {
+        font-weight: bold;
+      }
+    }
   }
 
   .cate {
@@ -30,6 +41,38 @@
         color: #495057;
         font-weight: bold;
         letter-spacing: 2px;
+      }
+    }
+  }
+
+  .item-list {
+    padding: 0 5px;
+
+    .item {
+      padding: 5px 0;
+      border-top: 1px solid #f1f1f1;
+
+      .item-image {
+        img {
+          width: 150px;
+          border-radius: 6px;
+          pointer-events: none;
+          box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        }
+      }
+      .item-desc {
+        .title {
+          margin-left: 0;
+          font-size: 18px;
+        }
+        .brand,
+        .joint,
+        .shaft,
+        .rent-price {
+          color: #999;
+          font-size: 14px;
+          line-height: 1.2rem;
+        }
       }
     }
   }

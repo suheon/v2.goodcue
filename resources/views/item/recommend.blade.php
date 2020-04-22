@@ -6,7 +6,7 @@
 @section('content')
 
 <div class="container recommend d-flex flex-column">
-  <!-- <nav aria-label="breadcrumb">
+  <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
         <a href="/">
@@ -17,7 +17,7 @@
       </li>
       <li class="breadcrumb-item active" aria-current="page">뭐 치지?</li>
     </ol>
-  </nav> -->
+  </nav>
 
   <div class="cate d-flex flex-column justify-content-center align-items-center">
     <div class="row">

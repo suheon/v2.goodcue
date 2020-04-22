@@ -5,7 +5,7 @@
 <!-- prettier-ignore -->
 @section('content')
 
-<div class="container item">
+<div class="container recommend d-flex flex-column">
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
@@ -16,10 +16,33 @@
     </ol>
   </nav>
 
-  <div class="item">
-    <div class="header">상품 구분</div>
-    <div class="body">상품 리스트</div>
+  
+  <div class="cate d-flex flex-column justify-content-center align-items-center">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="recommend_cate"><a href="/item/recommend/goodcue/list">가성비 좋은큐 <br> <small>(거래가 150만원 이상)</small></a></div>
+      </div>
+      <div class="col-lg-4">
+        <div class="recommend_cate"><a href="">가성비 좋은큐 <br> <small>(거래가 100~150만원)</small></a></div>
+      </div>
+      <div class="col-lg-4">
+        <div class="recommend_cate"><a href="">가성비 좋은큐 <br> <small>(거래가 100만원)</small></a></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="recommend_cate"><a href="">힘이 좋은 큐</a></div>
+      </div>
+      <div class="col-lg-4">
+        <div class="recommend_cate"><a href="">잘 끌리는 큐</a></div>
+      </div>
+      <div class="col-lg-4">
+        <div class="recommend_cate"><a href="">잘 밀리는 큐</a></div>
+      </div>
+    </div>
   </div>
+
+  
 </div>
 
 <!-- prettier-ignore -->
