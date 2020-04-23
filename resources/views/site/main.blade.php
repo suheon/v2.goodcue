@@ -64,7 +64,7 @@
 
   <div class="menu">
     <div class="row">
-      <div class="col-md-2 col-4 m-border-bottom"><a href="#">뭐 치지?</a></div>
+      <div class="col-md-2 col-4 m-border-bottom"><a href="/item/recommend">뭐 치지?</a></div>
       <div class="col-md-2 col-4 m-border-bottom"><a href="#">시타</a></div>
       <div class="col-md-2 col-4 m-border-bottom"><a href="#">큐 구매</a></div>
       <div class="col-md-2 col-4"><a href="#">내 큐 팔기</a></div>

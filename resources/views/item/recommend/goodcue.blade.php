@@ -16,6 +16,13 @@
     </ol>
   </nav>
 
+
+  <!-- 
+
+    거래가격
+    브랜드
+
+  -->
   
   <div class="cate d-flex flex-column justify-content-center align-items-center">
     <div class="row">

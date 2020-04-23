@@ -22,7 +22,9 @@
   <div class="cate d-flex flex-column justify-content-center align-items-center">
     <div class="row">
       <div class="col-lg-6">
-        <div class="recommend_cate"><a href="/item/recommend/goodcue">좋은큐연구소 추천</a></div>
+        <div class="recommend_cate" onClick="location.href='/item/recommend/goodcue'">
+          <a href="/item/recommend/goodcue">좋은큐연구소 추천</a>
+        </div>
       </div>
       <div class="col-lg-6">
         <div class="recommend_cate"><a href="/item/recommend/hot">인기 좋은 큐</a></div>
