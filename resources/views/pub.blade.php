@@ -1,36 +1,141 @@
+<?php
+  $no = 1;
+?>
 <html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        padding: 20px;
+      }
+      .text-danger {
+        font-weight: bold;
+      }
+    </style>
+  </head>
   <body>
     <h3>퍼블리싱 결과파일</h3>
-    <ol>
-      <li><a href="/">메인화면(로그인 전)</a></li>
-      <li><a href="/site/main_1">메인화면(로그인 후)</a></li>
 
-      <li><a href="/site/login">로그인</a></li>
-      <li><a href="/site/register/step01">회원가입-step01</a></li>
+    <h4><span class="text-danger">publishing 작업 진행 된거는 확인 하신 후에 comment 주세요!! </span></h4>
 
-      <p> 본인인증 이후에.. 직접가입 OR SNS 가입 갈라치기 선택하도록.. </p>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>페이지 이름</th>
+          <th>LINK URL (가칭)</th>
+          <th>publishing 진행</th>
+          <th>Description OR Question</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{$no++}}</td>
+          <td>메인화면(로그인 전)</td>
+          <td><a href="/" target="_blank">/</a></td>
+          <td>O</td>
+          <td>
+            <span class="text-danger">메인 배너 및 메인 메뉴 디자인 요소 필요</span>
+          </td>
+        </tr>
+        <tr>
+          <td>{{$no++}}</td>
+          <td>메인화면(로그인 후)</td>
+          <td><a href="/site/main_1" target="_blank">/site/main_1</a></td>
+          <td>O</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>{{$no++}}</td>
+          <td>회원가입-step01</td>
+          <td><a href="/site/register/step01">/site/register/step01</a></td>
+          <td>O</td>
+          <td>
+            본인인증 이후에.. 직접가입 OR SNS 가입 갈라치기 선택하도록..
+          </td>
+        </tr>
 
+        <tr>
+          <td>{{$no++}}</td>
+          <td>회원가입-step02</td>
+          <td><a href="/site/register/step02">/site/register/step02</a></td>
+          <td>O</td>
+          <td>프로필 이미지를 아예 빼버리고 회원 정보 관리에서 입력 하도록 할까.. (여기에 있으면 어려울수도.)</td>
+        </tr>
 
-      <li><a href="/site/register/step02">회원가입-step02</a></li>
+        <tr>
+          <td>{{$no++}}</td>
+          <td>회원가입(SNS)</td>
+          <td><a href="/site/register/step02-sns">/site/register/step02-sns</a></td>
+          <td>O</td>
+          <td></td>
+        </tr>
 
-      <p> 프로필 이미지를 아예 빼버리고 회원 정보 관리에서 입력 하도록 할까.. (여기에 있으면 어려울수도.) </p>
+        <tr>
+          <td>{{$no++}}</td>
+          <td>아이디/비밀번호 찾기</td>
+          <td><a href="/site/find-auth">/site/find-auth</a></td>
+          <td>O</td>
+          <td>
+            <ol>
+              <li>메일 사용 포기..</li>
+              <li>아이디 찾기 입력시 아이디 바로 알려줌( 두글자 정도 마스킹처리하고)</li>
+              <li>비밀번호 찾기 시 휴대폰 인증번호(카톡 or 메세지 활용) 입력 시 변경 비밀번호 설정 후 알려줌.</li>
+            </ol>
+          </td>
+        </tr>
 
-      <li><a href="/site/register/step02-sns">회원가입(SNS)</a></li>
+        <tr>
+          <td>{{$no++}}</td>
+          <td>검색(모바일)</td>
+          <td><a href="/site/serach">/site/serach</a></td>
+          <td>X</td>
+          <td></td>
+        </tr>
 
-      <li><a href="/site/find-auth">아이디/비밀번호 찾기</a></li>
+        <tr>
+          <td>{{$no++}}</td>
+          <td>뭐치지? (구분)</td>
+          <td><a href="/item/recommend">/item/recommend</a></td>
+          <td>O</td>
+          <td><span class="text-danger">디자인 요소 필요</span></td>
+        </tr>
+        <tr>
+          <td>{{$no++}}</td>
+          <td>좋은 연구소 추천 추천</td>
+          <td><a href="/recommend/goodcue">/recommend/goodcue</a></td>
+          <td>X</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>{{$no++}}</td>
+          <td>인기 좋은 큐</td>
+          <td><a href="/recommend/hot">/recommend/hot</a></td>
+          <td>X</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>{{$no++}}</td>
+          <td>평가 좋은 큐</td>
+          <td><a href="/recommend/review">/recommend/review</a></td>
+          <td>X</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>{{$no++}}</td>
+          <td>시그니처 큐</td>
+          <td><a href="/recommend/signature">/recommend/signature</a></td>
+          <td>X</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
 
-      <li><a href="/site/serach">검색(모바일)</a></li>
-
-      <!-- <li><a href="/site/serach">검색결과</a></li> -->
-
-      <li><a href="/item/recommend">뭐치지? (구분)</a></li>
-
-      <li><a href="/recommend/goodcue">추천</a></li>
-      <li><a href="/recommend/hot">인기 좋은 큐</a></li>
-      <li><a href="/recommend/review">평가 좋은 큐</a></a></li>
-      <li><a href="//recommend/signature">시그니처 큐</a></li>
-    
-    </ol>
     <br />
     <br /><br /><br /><br /><br /><br />
 
