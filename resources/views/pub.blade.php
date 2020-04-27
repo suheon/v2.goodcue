@@ -108,7 +108,7 @@
         <tr>
           <td>{{$no++}}</td>
           <td>좋은 연구소 추천 추천</td>
-          <td><a href="/recommend/goodcue">/recommend/goodcue</a></td>
+          <td><a href="/item/recommend/goodcue">/item/recommend/goodcue</a></td>
           <td>X</td>
           <td></td>
         </tr>
