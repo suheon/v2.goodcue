@@ -30,15 +30,18 @@
   </head>
 
   <body class="menu-on-left">
+    <!-- prettier-ignore -->
     @include('layouts.header')
+    <!-- prettier-ignore -->
     @yield('content')
+    <!-- prettier-ignore -->
     @include('layouts.footer')
 
     <!--   Core JS Files   -->
     <script src="/js/core/jquery.min.js" type="text/javascript"></script>
     <script src="/js/core/popper.min.js" type="text/javascript"></script>
     <script src="/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-    
+
     <script src="/js/plugins/moment.min.js"></script>
     <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
     <script src="/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
