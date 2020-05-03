@@ -14,13 +14,13 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <a class="navbar-brand" href="{{rpath('main')}}">
+      <a class="navbar-brand" href="{{ rpath('main') }}">
         <img class="logo" src="/img/logo.png" alt="좋은큐 연구소 로고" />
       </a>
 
       <div class="mobile-menu ml-auto pr-2">
-        <button type="submit" class="btn btn-white btn-just-icon btn-round">
-          <i class="material-icons">search</i>
+        <button type="button" class="btn btn-white btn-just-icon btn-round">
+          <a href="/site/search" class="material-icons">search</a>
         </button>
       </div>
     </div>
@@ -28,8 +28,8 @@
     <div class="collapse navbar-collapse">
       <div class="navbar-nav mobile-menu">
         <div class="nav-item my-4 d-flex justify-content-center mx-4">
-          <a href="{{rpath('login')}}" class="btn btn-primary mr-2" role="button">로그인</a>
-          <a href="{{rpath('register-01')}}" class="btn btn-outline-secondary">회원가입</a>
+          <a href="{{ rpath('login') }}" class="btn btn-primary mr-2" role="button">로그인</a>
+          <a href="{{ rpath('register-01') }}" class="btn btn-outline-secondary">회원가입</a>
         </div>
       </div>
 
@@ -91,8 +91,8 @@
           <i class="material-icons">search</i>
         </button>
 
-        <a href="{{rpath('login')}}" class="btn btn-primary ml-4">로그인</a>
-        <a href="{{rpath('register-01')}}" class="btn btn-outline-secondary">회원가입</a>
+        <a href="{{ rpath('login') }}" class="btn btn-primary ml-4">로그인</a>
+        <a href="{{ rpath('register-01') }}" class="btn btn-outline-secondary">회원가입</a>
       </form>
     </div>
   </div>

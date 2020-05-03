@@ -12,11 +12,11 @@
         <a href="/"><span class="material-icons">home</span></a>
       </li>
       <li class="breadcrumb-item"><a href="/item/recommend">뭐 치지 ?</a></li>
-      <li class="breadcrumb-item active" aria-current="page">좋은큐 연구소 추천</li>
+      <li class="breadcrumb-item active" aria-current="page">인기 좋은 큐</li>
     </ol>
   </nav>
 
-  <div class="filter mb-4">
+  <!-- <div class="filter mb-4">
     <div class="row">
       <div class="col-3 text-right filter-name">거래가격</div>
       <div class="col-9">
@@ -93,7 +93,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="item-list d-flex flex-column ">
     <div class="row">
@@ -196,39 +196,6 @@
       </div>
     </div>
   </div>
-
-  <!-- 
-
-    거래가격
-    브랜드
-    성능 체크 박스 ( 끌림, 밀림, 힘, 회전 )
-
-  -->
-
-  <!-- <div class="cate d-flex flex-column justify-content-center align-items-center">
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="recommend_cate"><a href="/item/recommend/goodcue/list">가성비 좋은큐 <br> <small>(거래가 150만원 이상)</small></a></div>
-      </div>
-      <div class="col-lg-4">
-        <div class="recommend_cate"><a href="">가성비 좋은큐 <br> <small>(거래가 100~150만원)</small></a></div>
-      </div>
-      <div class="col-lg-4">
-        <div class="recommend_cate"><a href="">가성비 좋은큐 <br> <small>(거래가 100만원)</small></a></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="recommend_cate"><a href="">힘이 좋은 큐</a></div>
-      </div>
-      <div class="col-lg-4">
-        <div class="recommend_cate"><a href="">잘 끌리는 큐</a></div>
-      </div>
-      <div class="col-lg-4">
-        <div class="recommend_cate"><a href="">잘 밀리는 큐</a></div>
-      </div>
-    </div>
-  </div> -->
 </div>
 
 <!-- prettier-ignore -->

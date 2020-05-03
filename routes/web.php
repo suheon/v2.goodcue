@@ -50,6 +50,10 @@ Route::get('/site/find-auth', function () {
   return view('/site/find-auth');
 });
 
+Route::get('/site/search', function() {
+  return view('/site/search');
+});
+
 Route::get('/item/recommend', function () {
   return view('/item/recommend');
 });
@@ -58,6 +62,31 @@ Route::get('/item/recommend/goodcue', function () {
   return view('/item/recommend/goodcue');
 });
 
+Route::get('/item/recommend/goodcue-blank', function () {
+  return view('/item/recommend/goodcue-blank');
+});
+
+Route::get('/item/recommend/hot', function () {
+  return view('/item/recommend/hot');
+});
+
 Route::get('/item/recommend/goodcue/list', function () {
   return view('/item/recommend/item-list');
+});
+
+// 시타 구분 페이지
+Route::get('/item/rent', function()  {
+  return view('/item/rent/index');
+});
+Route::get('/item/rent/cue', function()  {
+  return view('/item/rent/cue');
+});
+Route::get('/item/rent/shaft', function()  {
+  return view('/item/rent/shaft');
+});
+Route::get('/item/rent/visit', function()  {
+  return view('/item/rent/visit');
+});
+Route::get('/item/rent/visa', function()  {
+  return view('/item/rent/visa');
 });
