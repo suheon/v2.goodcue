@@ -152,14 +152,14 @@
           <td>{{$no++}}</td>
           <td>시타 - 큐</td>
           <td><a href="/item/rent/cue" target="_blank">/item/rent/cue</a></td>
-          <td>X</td>
+          <td>O</td>
           <td>롱고니, 한밭, 아담, JBS, 빌킹, 몰리나리, 유니버셜, 나머지 기타</td>
         </tr>
         <tr>
           <td>{{$no++}}</td>
           <td>시타 - 상대</td>
           <td><a href="/item/rent/shaft" target="_blank">/item/rent/shaft</a></td>
-          <td>X</td>
+          <td>O</td>
           <td><span class="text-danger"></span></td>
         </tr>
         <tr>

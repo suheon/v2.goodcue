@@ -46,7 +46,9 @@ footer.footer {
 @media (max-width: 991px) {
   //@media (max-width: 767px) {
   body > div.container {
-    padding: 0;
+    &.main {
+      padding: 0;
+    }
     max-width: 100%;
   }
 
