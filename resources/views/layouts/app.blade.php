@@ -27,6 +27,9 @@
     <link href="{{ mix('/css/all.css') }}" rel="stylesheet" />
 
     <link rel="canonical" href="http://{{ config('app.url') }}" />
+
+    <!-- prettier-ignore -->
+    @yield('page-css-style')
   </head>
 
   <body class="menu-on-left">
@@ -59,5 +62,8 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
     <script src="/js/material-kit.js?v=2.2.0" type="text/javascript"></script>
+
+    <!-- prettier-ignore -->
+    @yield('page-js-script')
   </body>
 </html>
